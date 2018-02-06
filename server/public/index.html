@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/client.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+
+    <!-- This script tag includes the Filestack API into your HTML file -->
+    <script src="https://static.filestackapi.com/v3/filestack.js"></script>
+    <!-- <script type="text/javascript" src="scripts/filestack.min.js"></script> -->
+    <!-- STYLING -->
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
+
 <body>
-    <input type="button">
+    <script>
+        var client = filestack.init("ANrUiCs67RpGoTbV2Wtg4z");
+
+        function pickMark() {
+            console.log("Picking Watermark");
+            //Limiting file types and number for uploading in the picker
+            client.pick({
+                //Only accepting files with a mimetype 'image/*'
+                accept: 'image/*',
+                //Only accepting at most 1 file
+                maxFiles: 1,
+
+            })
+        }
+    </script>
+    <h1>Filestack testing</h1>
+    <button class="btnSearch" onclick="pickMark()">Browse..</button>
 </body>
+
 </html>
