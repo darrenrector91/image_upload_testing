@@ -1,0 +1,26 @@
+{
+  "name": "image_upload_testing",
+  "version": "1.0.0",
+  "description": "Testing how to get image from mobile to site through Filestack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darrenrector91/image_upload_testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darrenrector91/image_upload_testing/issues"
+  },
+  "homepage": "https://github.com/darrenrector91/image_upload_testing#readme",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.9",
+    "express": "^4.16.2",
+    "filestack-js": "^0.11.2",
+    "nodemon": "^1.14.12"
+  }
+}
